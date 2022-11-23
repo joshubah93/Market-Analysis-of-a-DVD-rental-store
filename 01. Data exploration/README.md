@@ -37,7 +37,8 @@ FROM rental;
 
 Let's take a look at all the records for one customer.
 
-```SELECT *
+```
+SELECT *
 FROM rental
 WHERE customer_id = 1
 LIMIT 5;
@@ -77,6 +78,34 @@ category_id 	 name          last_update
 14	           Sci-Fi 	      2006-02-15 09:46:27
 15	           Sports 	      2006-02-15 09:46:27
 16	           Travel        2006-02-15 09:46:27
+
+
+## 1.3. Exploratory analysis of film table
+
+```
+SELECT 
+  title,
+  release_year,
+  language_id,
+  rental_duration,
+  rental_rate,
+  rating,
+  last_update
+FROM film
+LIMIT 10;
+```
+
+title	              release_year   rental_duration	   rental_rate  	rating 	 last_update
+Chamber Italian	    2006	          7	                 4.99	         NC-17 	  2013-05-26 14:50:58.951
+Grosse Wonderful	   2006	          5	                 4.99	         R        2013-05-26 14:50:58.951
+Airport Pollock	    2006	          6	                 4.99	         R        2013-05-26 14:50:58.951
+Bright Encounters	  2006	          4	                 4.99	         PG-13    2013-05-26 14:50:58.951
+Academy Dinosaur 	  2006	          6	                 0.99	         PG       2013-05-26 14:50:58.951
+Ace Goldfinger	     2006	          3	                 4.99	         G        2013-05-26 14:50:58.951
+Adaptation Holes	   2006	          7	                 2.99	         NC-17    2013-05-26 14:50:58.951
+Affair Prejudice	   2006	          5	                 2.99	         G        2013-05-26 14:50:58.951
+African Egg	        2006	          6	                 2.99	         G        2013-05-26 14:50:58.951
+Agent Truman	       2006	          3	                 2.99	         PG       2013-05-26 14:50:58.951
 
 
 |     
