@@ -29,6 +29,8 @@ SELECT
 COUNT (*) 
 FROM rental;
 ```
+
+
 *Output:*
 
 |count|
@@ -61,23 +63,27 @@ SELECT *
 FROM category
 ```
 
-category_id 	 name          last_update
-1	            Action  	     2006-02-15 09:46:27
-2	            Animation 	   2006-02-15 09:46:27
-3	            Children 	    2006-02-15 09:46:27
-4	            Classics 	    2006-02-15 09:46:27
-5	            Comedy	       2006-02-15 09:46:27
-6	            Documentary 	 2006-02-15 09:46:27
-7	            Drama	        2006-02-15 09:46:27
-8	            Family 	      2006-02-15 09:46:27
-9	            Foreign 	     2006-02-15 09:46:27
-10	           Games 	       2006-02-15 09:46:27
-11	           Horror 	      2006-02-15 09:46:27
-12	           Music 	       2006-02-15 09:46:27
-13	           New 	         2006-02-15 09:46:27
-14	           Sci-Fi 	      2006-02-15 09:46:27
-15	           Sports 	      2006-02-15 09:46:27
-16	           Travel        2006-02-15 09:46:27
+
+*Output:*
+
+|category_id 	 |name          |last_update        |
+|--------------|-------------:|-------------------|
+|1	            |Action  	     |2006-02-15 09:46:27|
+|2	            |Animation 	   |2006-02-15 09:46:27|
+|3	            |Children 	    |2006-02-15 09:46:27|
+|4	            |Classics 	    |2006-02-15 09:46:27|
+|5	            |Comedy	       |2006-02-15 09:46:27|
+|6	            |Documentary 	 |2006-02-15 09:46:27|
+|7	            |Drama	        |2006-02-15 09:46:27|
+|8	            |Family 	      |2006-02-15 09:46:27|
+|9	            |Foreign 	     |2006-02-15 09:46:27|
+|10	           |Games 	       |2006-02-15 09:46:27|
+|11	           |Horror 	      |2006-02-15 09:46:27|
+|12	           |Music 	       |2006-02-15 09:46:27|
+|13	           |New 	         |2006-02-15 09:46:27|
+|14	           |Sci-Fi 	      |2006-02-15 09:46:27|
+|15	           |Sports 	      |2006-02-15 09:46:27|
+|16	           |Travel        |2006-02-15 09:46:27|
 
 
 ## 1.3. Exploratory analysis of film table
@@ -95,17 +101,95 @@ FROM film
 LIMIT 10;
 ```
 
-title	              release_year   rental_duration	   rental_rate  	rating 	 last_update
-Chamber Italian	    2006	          7	                 4.99	         NC-17 	  2013-05-26 14:50:58.951
-Grosse Wonderful	   2006	          5	                 4.99	         R        2013-05-26 14:50:58.951
-Airport Pollock	    2006	          6	                 4.99	         R        2013-05-26 14:50:58.951
-Bright Encounters	  2006	          4	                 4.99	         PG-13    2013-05-26 14:50:58.951
-Academy Dinosaur 	  2006	          6	                 0.99	         PG       2013-05-26 14:50:58.951
-Ace Goldfinger	     2006	          3	                 4.99	         G        2013-05-26 14:50:58.951
-Adaptation Holes	   2006	          7	                 2.99	         NC-17    2013-05-26 14:50:58.951
-Affair Prejudice	   2006	          5	                 2.99	         G        2013-05-26 14:50:58.951
-African Egg	        2006	          6	                 2.99	         G        2013-05-26 14:50:58.951
-Agent Truman	       2006	          3	                 2.99	         PG       2013-05-26 14:50:58.951
+
+*Output:*
+
+|title	              |release_year   |rental_duration	   |rental_rate  	|rating 	 |last_update            |
+|--------------------|---------------|-------------------|--------------|--------:|---------------------- |
+|Chamber Italian	    |2006	          |7	                 |4.99	         |NC-17 	  |2013-05-26 14:50:58.951|
+|Grosse Wonderful	   |2006	          |5	                 |4.99	         |R        |2013-05-26 14:50:58.951|
+|Airport Pollock	    |2006	          |6	                 |4.99	         |R        |2013-05-26 14:50:58.951|
+|Bright Encounters	  |2006	          |4	                 |4.99	         |PG-13    |2013-05-26 14:50:58.951|
+|Academy Dinosaur 	  |2006	          |6	                 |0.99	         |PG       |2013-05-26 14:50:58.951|
+|Ace Goldfinger	     |2006	          |3	                 |4.99	         |G        |2013-05-26 14:50:58.951|
+|Adaptation Holes	   |2006	          |7	                 |2.99	         |NC-17    |2013-05-26 14:50:58.951|
+|Affair Prejudice	   |2006	          |5	                 |2.99	         |G        |2013-05-26 14:50:58.951|
+|African Egg	        |2006	          |6	                 |2.99	         |G        |2013-05-26 14:50:58.951|
+|Agent Truman	       |2006	          |3	                 |2.99	         |PG       |2013-05-26 14:50:58.951|
+
+
+distinct rating 
+
+```
+SELECT 
+  DISTINCT (rating)
+  FROM film
+LIMIT 10;
+```
+
+*Output:*
+
+|Rating|
+|-----:|
+|R     |
+|NC-17 |
+|G     |
+|PG    |
+|PG-13 |
+
+
+
+## 1.4. Exploratory analysis of film table
+
+```
+SELECT *
+FROM actor
+LIMIT 5
+```
+
+
+*Output:*
+
+|actor_id 	 |first_name 	  |last_name	      |last_update           |
+|-----------|--------------|---------------:|----------------------|
+|1	         |Penelope 	    |Guiness 	       |2013-05-26 14:47:57.62|
+|2	         |Nick 	        |Wahlberg 	      |2013-05-26 14:47:57.62|
+|3	         |Ed 	          |Chase 	         |2013-05-26 14:47:57.62|
+|4	         |Jennifer 	    |Davis 	         |2013-05-26 14:47:57.62|
+|5	         |Johnny 	      |Lollobrigida 	  |2013-05-26 14:47:57.62|
+
+
+
+## 1.5. Exploratory analysis of film table
+
+```
+SELECT *
+FROM language
+```
+
+*Output:*
+
+|language_id 	|name               |last_update        |
+|-------------|------------------:|-------------------|
+|1	           |English            |2006-02-15 10:02:19|
+|2	           |Italian            |2006-02-15 10:02:19|
+|3	           |Japanese           |2006-02-15 10:02:19|
+|4	           |Mandarin           |2006-02-15 10:02:19|
+|5	           |French             |2006-02-15 10:02:19|
+|6	           |German             |2006-02-15 10:02:19|
+
+
+*Output:*
+
+```
+SELECT
+  COUNT(DISTINCT name)
+FROM language;
+```
+
+|count|
+|----:|
+|6    |
 
 
 |     
