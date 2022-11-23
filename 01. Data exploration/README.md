@@ -1,5 +1,5 @@
 # 1. Data exploration
-## 2. Exploratory analysis of rental table
+## 1.1. Exploratory analysis of rental table
 
 The first table in our database schema is the rental table. Let's take a look at all the columns in the table. We'll limit the output to 5 rows.
 
@@ -52,7 +52,33 @@ LIMIT 5;
 |1422	    |2005-06-15 18:02:53|1021	       |1	         |2005-06-19 15:54:53|2	      |2006-02-16 02:30:53|
 |1476	    |2005-06-15 21:08:46|1407	       |1          |2005-06-25 02:26:46|1	      |2006-02-16 02:30:53|
 
-|
+
+## 1.2. Exploratory analysis of category table
+
+```
+SELECT *
+FROM category
+```
+
+category_id 	 name          last_update
+1	            Action  	     2006-02-15 09:46:27
+2	            Animation 	   2006-02-15 09:46:27
+3	            Children 	    2006-02-15 09:46:27
+4	            Classics 	    2006-02-15 09:46:27
+5	            Comedy	       2006-02-15 09:46:27
+6	            Documentary 	 2006-02-15 09:46:27
+7	            Drama	        2006-02-15 09:46:27
+8	            Family 	      2006-02-15 09:46:27
+9	            Foreign 	     2006-02-15 09:46:27
+10	           Games 	       2006-02-15 09:46:27
+11	           Horror 	      2006-02-15 09:46:27
+12	           Music 	       2006-02-15 09:46:27
+13	           New 	         2006-02-15 09:46:27
+14	           Sci-Fi 	      2006-02-15 09:46:27
+15	           Sports 	      2006-02-15 09:46:27
+16	           Travel        2006-02-15 09:46:27
+
+
 |     
 |    
 |     
