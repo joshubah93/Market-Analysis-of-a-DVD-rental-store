@@ -10,7 +10,7 @@ WHERE amount > 5;
 *Output:*
 
 |count|
-|----:|
+|:---:|
 |3618 |
 
 
@@ -24,7 +24,7 @@ WHERE first_name LIKE 'P%';
 *Output:*
 
 |count|
-|----:|
+|:---:|
 |  5  |
 
 
@@ -38,7 +38,7 @@ FROM address;
 *Output:*
 
 |count|
-|----:|
+|:---:|
 | 378 |
 
 
@@ -53,7 +53,7 @@ LIMIT 10;
 
 
 |     District    |
-|----------------:|
+|:---------------:|
 |Aden             |
 |Eastern Visayas  |
 |Vaduz            |
@@ -77,7 +77,7 @@ AND replacement_cost BETWEEN 5 AND 15;
 *Output:*
 
 |count|
-|----:|
+|:---:|
 |  52 |
 
 
@@ -91,6 +91,6 @@ WHERE title LIKE '%Truman%';
 *Output:*
 
 |count|
-|----:|
+|:---:|
 |  5  |
 
