@@ -21,6 +21,13 @@ SELECT COUNT(*) FROM actor
 WHERE first_name LIKE 'P%';
 ```
 
+*Output:*
+
+|count|
+|----:|
+|  5  |
+
+
 ## Q3. How many unique districts are our customers from?
 
 ```
@@ -28,11 +35,36 @@ SELECT COUNT(DISTINCT(district))
 FROM address;
 ```
 
+*Output:*
+
+|count|
+|----:|
+| 378 |
+
+
 ## Q4. Retrieve the list of names for those distinct districts from the previous question.
 
 ```
-SELECT DISTINCT(district) FROM address;
+SELECT DISTINCT(district) FROM address
+LIMIT 10;
 ```
+
+*Output:*
+
+
+|     District    |
+|----------------:|
+|Aden             |
+|Eastern Visayas  |
+|Vaduz            |
+|Tokat            |
+|Anzotegui        |
+|Saint-Denis      |
+|Chollanam        |
+|Chihuahua        |
+|Nyanza           |
+|Changhwa         |
+
 
 ## Q5. How many films have a rating of R and a replacement cost between $5 and $15?
 
@@ -42,6 +74,13 @@ WHERE rating = 'R'
 AND replacement_cost BETWEEN 5 AND 15;
 ```
 
+*Output:*
+
+|count|
+|----:|
+|  52 |
+
+
 ## Q6. How many films have the word Truman somewhere in the title?
 
 ```
@@ -49,7 +88,9 @@ SELECT COUNT(*) FROM film
 WHERE title LIKE '%Truman%';
 ```
 
+*Output:*
 
-
-
+|count|
+|----:|
+|  5  |
 
