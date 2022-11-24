@@ -58,6 +58,8 @@ LIMIT 5;
 
 ## 1.2. Exploratory analysis of category table
 
+The category table holds details of the different genres of every movie in the database
+
 ```
 SELECT *
 FROM category
@@ -87,12 +89,12 @@ FROM category
 
 
 ## 1.3. Exploratory analysis of film table
+The film table contains details of every movie in the database
 
 ```
 SELECT 
   title,
   release_year,
-  language_id,
   rental_duration,
   rental_rate,
   rating,
@@ -118,7 +120,8 @@ LIMIT 10;
 |Agent Truman	       |2006	          |3	                 |2.99	         |PG       |2013-05-26 14:50:58.951|
 
 
-distinct rating 
+### 1.3.1 distinct rating 
+To get the unique rating of all the movies in the database
 
 ```
 SELECT 
@@ -139,7 +142,9 @@ LIMIT 10;
 
 
 
-## 1.4. Exploratory analysis of film table
+## 1.4. Exploratory analysis of actor table
+
+This table gives information on the actors in the available movies
 
 ```
 SELECT *
@@ -160,7 +165,9 @@ LIMIT 5
 
 
 
-## 1.5. Exploratory analysis of film table
+## 1.5. Exploratory analysis of language table
+
+Lets go ahead and explore the languages used in the movies, and also explore how many unique languages in the database
 
 ```
 SELECT *
