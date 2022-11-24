@@ -37,7 +37,7 @@ FROM rental;
 |----:|
 |16044|
 
-Let's take a look at all the records for one customer.
+Let's take a look at all the records for one customer
 
 ```
 SELECT *
@@ -120,7 +120,7 @@ LIMIT 10;
 |Agent Truman	       |2006	          |3	                 |2.99	         |PG       |2013-05-26 14:50:58.951|
 
 
-### 1.3.1 distinct rating 
+### 1.3.1. Distinct rating 
 To get the unique rating of all the movies in the database
 
 ```
