@@ -7,6 +7,8 @@ SELECT COUNT(amount) FROM payment
 WHERE amount > 5;
 ```
 
+*Output:*
 
-count
-3618
+|count|
+|----:|
+|3618 |
