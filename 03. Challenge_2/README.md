@@ -1,4 +1,5 @@
-# In this part we are going to be solving most of the common business-related questions.
+In the previous challenge questions, we explored how to implement ```SELECT``` ,  ```SELECT DISTINCT``` , ```COUNT``` , ```ORDER BY``` , ```LIMIT``` ,  ```LIKE``` 
+statements. In addition to that, we will go a step futher to explore the use of ```JOIN``` statement to solve real world scenario challenges.
 
 ## Q1. A customer forgot their wallet at our store! We need to track down their email to inform them. What is the email for the customer with the name Nancy Thomas?
 
