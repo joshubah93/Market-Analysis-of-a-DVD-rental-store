@@ -1,4 +1,4 @@
-# Market analysis of a DVD rental store.
+## Market analysis of a DVD rental store.
 
 > This repo contains all the files, images and workflow of a rental store.
 
