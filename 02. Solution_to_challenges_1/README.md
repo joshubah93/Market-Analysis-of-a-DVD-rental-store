@@ -1,4 +1,11 @@
-Here we are going to explore some challenges, starting from the easiest to the tougher ones
+ Here we are going to explore some typical business situation challenges. We are starting from the fundamental statements such as:
+
+- ```SELECT```
+- ```SELECT DISTINCT```
+- ```COUNT```
+- ```ORDER BY```
+- ```LIMIT```
+- ```LIKE```
 
 ## Q1. How many payment transactions were greater than $5.00?
 
