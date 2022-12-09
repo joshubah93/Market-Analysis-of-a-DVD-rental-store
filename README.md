@@ -1,6 +1,6 @@
 # Market analysis of a DVD rental store.
 
-> This repo contains all the files and work of a rental store using SQL
+> This repo contains all the files, images and workflow of a rental store.
 
 
 [![forthebadge](images/badge/made-with-postgresql.svg)]()
