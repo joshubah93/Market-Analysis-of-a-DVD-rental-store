@@ -3,7 +3,7 @@
 
 The first table in our database schema is the rental table. Let's take a look at all the columns in the table. We'll limit the output to 5 rows.
 
-```
+```sql
 SELECT * 
 FROM rental
 LIMIT 5;
@@ -24,7 +24,7 @@ LIMIT 5;
 
 To know the total number of rentals in this store
 
-```
+```sql
 SELECT 
 COUNT (*) 
 FROM rental;
@@ -39,7 +39,7 @@ FROM rental;
 
 Let's take a look at all the records for one customer
 
-```
+```sql
 SELECT *
 FROM rental
 WHERE customer_id = 1
@@ -60,7 +60,7 @@ LIMIT 5;
 
 The category table holds details of the different genres of every movie in the database
 
-```
+```sql
 SELECT *
 FROM category
 ```
@@ -91,7 +91,7 @@ FROM category
 ## 1.3. Exploratory analysis of film table
 The film table contains details of every movie in the database
 
-```
+```sql
 SELECT 
   title,
   release_year,
@@ -123,7 +123,7 @@ LIMIT 10;
 ### 1.3.1. Distinct rating 
 To get the unique rating of all the movies in the database
 
-```
+```sql
 SELECT 
   DISTINCT (rating)
   FROM film
@@ -146,7 +146,7 @@ LIMIT 10;
 
 This table gives information on the actors in the available movies
 
-```
+```sql
 SELECT *
 FROM actor
 LIMIT 5
@@ -169,7 +169,7 @@ LIMIT 5
 
 Lets go ahead and explore the languages used in the movies, and also explore how many unique languages in the database
 
-```
+```sql
 SELECT *
 FROM language
 ```
@@ -188,7 +188,7 @@ FROM language
 
 *Output:*
 
-```
+```sql
 SELECT
   COUNT(DISTINCT name)
 FROM language;
@@ -198,7 +198,4 @@ FROM language;
 |----:|
 |6    |
 
-
-|     
-|    
-|     
+    
