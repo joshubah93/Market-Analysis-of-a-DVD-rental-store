@@ -50,3 +50,21 @@ The relationship between the tables can be found in the schema below:
 ![Schema](https://www.postgresqltutorial.com/wp-content/uploads/2018/03/dvd-rental-sample-database-diagram.png)
 
 </div>
+
+Expected Outcomes:
+
+The Market Analysis of DVD Rental Store Data Analysis Project delivers a set of valuable outcomes that inform strategic decisions and guide DVD rental stores toward sustained relevance:
+
+Actionable Insights: The project provides actionable insights into consumer behavior, enabling DVD rental store owners to tailor their offerings to changing preferences.
+
+Strategic Recommendations: Based on data-driven analysis, the project offers targeted strategies for differentiation, customer engagement, and operational efficiency.
+
+Segment-Specific Approaches: Insights into consumer segments guide the development of customized approaches to cater to diverse preferences.
+
+Competitive Advantage: By understanding the competitive landscape and evolving market trends, DVD rental stores can position themselves advantageously.
+
+Data-Backed Decision-Making: Stakeholders can make informed decisions backed by data, minimizing risks and uncertainties associated with changing market dynamics.
+
+Enhanced Customer Engagement: Strategies aligned with consumer preferences foster stronger customer relationships and loyalty.
+
+Sustainability and Adaptation: DVD rental stores can use the project's insights to adapt and sustain their businesses amidst digital disruptions.
